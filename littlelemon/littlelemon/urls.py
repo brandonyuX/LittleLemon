@@ -22,5 +22,7 @@ urlpatterns = [
     path('restaurant/',include("restaurant.urls")),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('restaurant/',include('restaurant.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken'))
 ]
 
